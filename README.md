@@ -2,9 +2,9 @@
 
 tRandom is a simple, cross-platform, psuedo-random number generator for games and draws.  Written in Python using tkinter.
 
-# Lisence
+# License
 
-Distrubuted under the GPLv3 lisence.
+Distrubuted under the GPLv3 license.
 
 # About
 
