@@ -69,7 +69,6 @@ class Window(Frame):
         self.past8.place(x=205,y=180)
 
 
-
         exitButton = Button(self, text="Exit", command=self.clickExit)
         exitButton.place(x=5,y=225)
 
@@ -89,7 +88,7 @@ class Window(Frame):
         tkinter.messagebox.showerror('tRandom - Error','Make sure you only enter whole numbers below 1000.')
 
     def clickVersion(self):
-        tkinter.messagebox.showinfo('tRandom - Version', 'Pre-release, unversioned\n(C) Fred Boniface 2020')
+        tkinter.messagebox.showinfo('tRandom - Version', 'v0.0.1\n(C) Fred Boniface 2020')
 
     def clickAbout(self):
         tkinter.messagebox.showinfo('tRandom - About', 'An easy to use psuedo-random number generator written in Python 3.\n\nFor more information visit:\nhttps://tRandom.fjla.uk/')
