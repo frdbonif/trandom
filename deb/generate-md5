@@ -1,3 +1,0 @@
-#!/bin/sh
-
-md5sum `find . -type f | grep -v '^[.]/DEBIAN/'` >DEBIAN/md5sums
