@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-# tRandom v0.3 (C) Fred Boniface 2020
+# tRandom v0.4 (C) Fred Boniface 2020
 # Lisenced under GPLv3
 
 from tkinter import *
@@ -95,7 +95,7 @@ class Window(Frame):
 
     # Software version informational popup
     def clickVersion(self):
-        tkinter.messagebox.showinfo('tRandom - Version', 'v0.0.1\n(C) Fred Boniface 2020')
+        tkinter.messagebox.showinfo('tRandom - Version', 'v0.4\n(C) Fred Boniface 2020')
 
     # About informational popup
     def clickAbout(self):
@@ -103,7 +103,7 @@ class Window(Frame):
 
     # License informational popup
     def clickLic(self):
-        tkinter.messagebox.showinfo('tRandom - License', 'tRandom is licensed under the GPLv3.  A copy of this license is included with the software, for more information visit:\nhttps://trandom.fjla.uk/')
+        tkinter.messagebox.showinfo('tRandom - License', 'tRandom is licensed under the GPLv3.  A copy of this license is included with the software, for more information visit:\nhttps://tRandom.fjla.uk/')
 
     # Reset function.
     def clickReset(self):

@@ -1,5 +1,5 @@
 Package: tRandom
-Version: 0.3
+Version: 0.4
 Architecture: all
 Maintainer: Fred Boniface <fred@fjla.uk>
 Depends: python3 (>= 3.6), python3-tk (>=3.6)

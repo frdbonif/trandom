@@ -1,11 +1,16 @@
 [Desktop Entry]
-Version=0.2
+Encoding=UTF-8
+Version=0.4
 Type=Application
 Name=tRandom
+Comment=Random number generator
+Comment[fr]=Générateur de nombres aléatoires
+Comment[de]=Zufallszahlengenerator
 GenericName=Random Number Generator
-Comment=Generate psuedo-random numbers for games or draws
+GenericName[fr]=Générateur de nombres aléatoires
+GenericName[de]=Zufallszahlengenerator
 Exec=/usr/bin/trandom/tRandom.py
 Icon=/usr/share/trandom/icon.png
 Terminal=false
-Categories=utilities;games;mathematics
-StartupNotify=true
+Categories=Application;Utilities;
+StartupNotify=false

@@ -1,4 +1,4 @@
-# tRandom v0.3
+# tRandom v0.4
 
 tRandom is a simple, cross-platform, psuedo-random number generator for games and draws.  Written in Python using tkinter.
 
@@ -22,6 +22,10 @@ If installing using the deb package all dependencies should be taken care of.
 
 - `python3` (Tested on 3.8)
 - `python3-tk`
+
+# Known Issues
+
+- When installing with the DEB, the package will show in the `Lost & Found` category in your app launcher (At least on KDE Plasma).
 
 # Contributing
 
