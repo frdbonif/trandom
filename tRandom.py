@@ -14,10 +14,10 @@ class Window(Frame):
         self.master = master
         self.pack(fill=BOTH, expand=1)
 
-# Define class variables
+        # Define prevResults list
         self.prevResults = [" ", " ", " ", " "," ", " ", " ", " "]
 
-# Define Menu Bar and Contents
+        # Define Menu Bar
         menu = Menu(self.master)
         self.master.config(menu=menu)
         fileMenu = Menu(menu)
@@ -25,13 +25,13 @@ class Window(Frame):
         aboutMenu = Menu(menu)
         menu.add_cascade(label="About", menu=aboutMenu)
 
+        # Define menu emtries
         fileMenu.add_command(label="Exit", command=self.clickExit)
         aboutMenu.add_command(label="Version", command=self.clickVersion)
         aboutMenu.add_command(label='License', command=self.clickLic)
         aboutMenu.add_command(label="About", command=self.clickAbout)
 
-# Define window widgets
-
+        # Define top labels and entry boxes
         l1 = Label(self, text="Enter the range of numbers below")
         l1.place(x=5,y=10)
         lIn1 = Label(self, text="Lowest Number:")
@@ -45,12 +45,15 @@ class Window(Frame):
         self.in2.place(x=150, y=70)
         self.in2.insert(0,"100")
 
+        # Define result labels
         self.l3 = Label(self, text="Your result:")
         self.l3.place(x=5,y=100)
         self.l2 = Label(self, font=("Courier", 55), fg="red")
         self.l2.place(x=5,y=130)
         self.l4 = Label(self, text="Past results:")
         self.l4.place(x=160,y=100)
+        
+        # Define past result labels
         self.past1 = Label(self)
         self.past1.place(x=165,y=120)
         self.past2 = Label(self)
@@ -68,7 +71,7 @@ class Window(Frame):
         self.past8 = Label(self)
         self.past8.place(x=205,y=180)
 
-
+        # Define bottom buttons
         exitButton = Button(self, text="Exit", command=self.clickExit)
         exitButton.place(x=5,y=225)
 
@@ -78,24 +81,30 @@ class Window(Frame):
         resetButton = Button(self, text="Reset", command=self.clickReset)
         resetButton.place(x=75,y=225)
 
-# Define Functions
+    # Define Functions
 
+    # Exit the program
     def clickExit(self):
         exit()
 
+    # Interger entry error popup
     def intErr(self):
         print("Oops!")
         tkinter.messagebox.showerror('tRandom - Error','Make sure you only enter whole numbers below 1000.')
 
+    # Software version informational popup
     def clickVersion(self):
         tkinter.messagebox.showinfo('tRandom - Version', 'v0.0.1\n(C) Fred Boniface 2020')
 
+    # About informational popup
     def clickAbout(self):
         tkinter.messagebox.showinfo('tRandom - About', 'An easy to use psuedo-random number generator written in Python 3.\n\nFor more information visit:\nhttps://tRandom.fjla.uk/')
 
+    # License informational popup
     def clickLic(self):
         tkinter.messagebox.showinfo('tRandom - License', 'tRandom is licensed under the GPLv3.  A copy of this license is included with the software, for more information visit:\nhttps://trandom.fjla.uk/')
 
+    # Reset function.
     def clickReset(self):
         self.prevResults.clear()
         self.prevResults = [" ", " ", " ", " "," ", " ", " ", " "]
@@ -109,13 +118,16 @@ class Window(Frame):
         self.past7.config(text="")
         self.past8.config(text="")
 
+    # Generate function.
     def clickGenerate(self):
+        
+        # Get strings from entry box
         lowStr = self.in1.get()
         highStr = self.in2.get()
         print("Low: " + lowStr)
         print("High: " + highStr)
         
-        # Try to get High & Low values as intergers
+        # Try to convert strings to intergers or show error box
         try:
             lowInt = int(lowStr)
             highInt = int(highStr)
@@ -123,12 +135,16 @@ class Window(Frame):
         except:
             self.intErr()
 
+        # Generate the random number and print to console
         result = random.randrange(lowInt,highInt)
         print("Result:")
         print(result)
+        
+        # Append to prevResults print list to console
         self.prevResults.append(result)
         print(self.prevResults)
 
+        # Print result and prevResults to interface
         self.l2.config(text=result)
         self.past1.config(text=self.prevResults[-1])
         self.past2.config(text=self.prevResults[-2])
@@ -139,6 +155,7 @@ class Window(Frame):
         self.past7.config(text=self.prevResults[-7])
         self.past8.config(text=self.prevResults[-8])
 
+# Main
 root = Tk()
 app = Window(root)
 root.iconphoto(False, PhotoImage(file='icon.png'))
