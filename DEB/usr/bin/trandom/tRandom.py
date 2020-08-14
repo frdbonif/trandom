@@ -166,7 +166,7 @@ class Window(Frame):
 # Main
 root = Tk()
 app = Window(root)
-root.iconphoto(False, PhotoImage(file='icon.png'))
+root.iconphoto(False, PhotoImage(file='/usr/share/trandom/icon.png'))
 root.wm_title("tRandom")
 root.geometry("250x260")
 root.mainloop()

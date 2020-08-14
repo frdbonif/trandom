@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.2
+Type=Application
+Name=tRandom
+GenericName=Random Number Generator
+Comment=Generate psuedo-random numbers for games or draws
+Exec=/usr/bin/trandom/tRandom.py
+Icon=/usr/share/trandom/icon.png
+Terminal=false
+Categories=utilities;games;mathematics
+StartupNotify=true

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">trandom.desktop</id>
+  <licence>GPLv3</licence>
+  <description>
+      <p>tRandom is a simple psuedo-random number generator for games, fun and draws.</p>
+  </description>
+  <url type="homepage">https://trandom.fjla.uk/</url>
+  <updatecontact>fred-boniface</updatecontact>
+</application>
