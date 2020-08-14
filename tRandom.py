@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-# tRandom v0.4 (C) Fred Boniface 2020
+# tRandom v0.4.1 (C) Fred Boniface 2020
 # Lisenced under GPLv3
 
 from tkinter import *

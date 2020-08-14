@@ -12,5 +12,5 @@ GenericName[de]=Zufallszahlengenerator
 Exec=/usr/bin/trandom/tRandom.py
 Icon=/usr/share/trandom/icon.png
 Terminal=false
-Categories=Application;Utilities;
+Categories=Application;Utility;Game;Accessory
 StartupNotify=false

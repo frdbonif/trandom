@@ -1,4 +1,4 @@
-# tRandom v0.4
+# tRandom v0.4.1
 
 tRandom is a simple, cross-platform, psuedo-random number generator for games and draws.  Written in Python using tkinter.
 
