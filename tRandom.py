@@ -90,7 +90,7 @@ class Window(Frame):
     # Interger entry error popup
     def intErr(self):
         print("Oops!")
-        tkinter.messagebox.showerror('tRandom - Error','Make sure you only enter whole numbers below 1000.')
+        tkinter.messagebox.showerror('tRandom - Error','Make sure you only enter whole numbers between 0 and 999.')
 
     # Software version informational popup
     def clickVersion(self):
@@ -135,25 +135,32 @@ class Window(Frame):
         except:
             self.intErr()
 
-        # Generate the random number and print to console
-        result = random.randrange(lowInt,highInt)
-        print("Result:")
-        print(result)
+        # Check that the intergers are within range
+        if highInt > 1000:
+            self.intErr()
+        elif lowInt < 0:
+            self.intErr()
+        else:
+            
+            # Generate the random number and print to console
+            result = random.randrange(lowInt,highInt)
+            print("Result:")
+            print(result)
         
-        # Append to prevResults print list to console
-        self.prevResults.append(result)
-        print(self.prevResults)
+            # Append to prevResults print list to console
+            self.prevResults.append(result)
+            print(self.prevResults)
 
-        # Print result and prevResults to interface
-        self.l2.config(text=result)
-        self.past1.config(text=self.prevResults[-1])
-        self.past2.config(text=self.prevResults[-2])
-        self.past3.config(text=self.prevResults[-3])
-        self.past4.config(text=self.prevResults[-4])
-        self.past5.config(text=self.prevResults[-5])
-        self.past6.config(text=self.prevResults[-6])
-        self.past7.config(text=self.prevResults[-7])
-        self.past8.config(text=self.prevResults[-8])
+            # Print result and prevResults to interface
+            self.l2.config(text=result)
+            self.past1.config(text=self.prevResults[-1])
+            self.past2.config(text=self.prevResults[-2])
+            self.past3.config(text=self.prevResults[-3])
+            self.past4.config(text=self.prevResults[-4])
+            self.past5.config(text=self.prevResults[-5])
+            self.past6.config(text=self.prevResults[-6])
+            self.past7.config(text=self.prevResults[-7])
+            self.past8.config(text=self.prevResults[-8])
 
 # Main
 root = Tk()
