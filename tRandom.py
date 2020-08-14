@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-# tRandom (C) Fred Boniface 2020, All Rights Reserved
+# tRandom v0.2 (C) Fred Boniface 2020, All Rights Reserved
 
 from tkinter import *
 import tkinter.messagebox

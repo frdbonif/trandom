@@ -1,4 +1,4 @@
-# tRandom
+# tRandom v0.2
 
 tRandom is a simple, cross-platform, psuedo-random number generator for games and draws.  Written in Python using tkinter.
 
@@ -12,7 +12,9 @@ I created tRandom while a Python beginner, I was attempting to gain experience a
 
 # Installing
 
-A deb package is included for v0.0.1 with two minor know issues.  This has only been tested on Ubuntu 18.04, but being a 100% Python application with only included packages imported, it should run happily all over the place.
+A deb package is available for v0.2 with two minor know issues.  This has only been tested on Ubuntu 18.04, but being a 100% Python application with only included packages imported, it should run happily all over the place.
+
+To install elsewhere, the `tRandom.py` and `icon.png` files should be kept in the same folder, as long as you have the dependencies listed below installed, you will be able to launch the `tRandom.py` file directly.  On Windows devices you may want to rename the `py` file to `tRandom.pyw` which will launch the program without a console window opening.
 
 # Dependencies
 
